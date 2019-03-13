@@ -28,7 +28,7 @@ dependencies {
     testCompile(projectTests(":compiler:tests-common"))
     
     testCompileOnly(project(":kotlin-reflect-api"))
-    testRuntime(project(":kotlin-reflect"))
+    if (System.getProperty("idea.active") != null) testRuntimeOnly(files("${rootProject.projectDir}/dist/kotlinc/lib/kotlin-reflect.jar"))
 
 }
 
