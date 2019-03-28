@@ -51,8 +51,8 @@ pill {
 }
 
 buildScan {
-    setTermsOfServiceUrl("https://gradle.com/terms-of-service")
-    setTermsOfServiceAgree("yes")
+    setServer(System.getenv("GE_URL"))
+    publishAlways()
 }
 
 val configuredJdks: List<JdkId> =

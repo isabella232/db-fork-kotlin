@@ -345,3 +345,5 @@ project(':kotlinx-serialization-ide-plugin').projectDir = file("$rootDir/plugins
 project(':kotlin-serialization').projectDir = file("$rootDir/libraries/tools/kotlin-serialization")
 project(':kotlin-serialization-unshaded').projectDir = file("$rootDir/libraries/tools/kotlin-serialization-unshaded")
 project(':kotlin-idl2k').projectDir = file("$rootDir/libraries/tools/idl2k")
+
+apply from: "gradle/buildCache.gradle"
